@@ -41,6 +41,13 @@ export default function RootLayout({
       <body className="min-h-screen bg-[#050505] text-[#fafafa]">
         {children}
 
+        {/* Yetti Chat Widget */}
+        <Script
+          src="https://yetti.ai/widget/yetti-chat.js"
+          data-widget-id="2acfb74f-9a7a-4d6c-b79b-0bfe9108ba34"
+          strategy="afterInteractive"
+        />
+
         {/* Yetti Booking Widget Script */}
         <Script id="yetti-booking" strategy="afterInteractive">
           {`
